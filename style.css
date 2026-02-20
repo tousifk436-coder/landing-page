@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sen", sans-serif;
+}
+:root{
+    --bgcolorblue:#4549B2;
+    --bgcolourlightpurple:#7F68E2;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: rgb(187, 120, 120);
+}
+.navitems a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    
+}
+.navitems{
+    display: flex;
+    i{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+}
+.bar{
+    display: none;
+    font-size: 30px;
+}
+.herosec{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+      background-image: url("https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/coding-background-texture.jpg");
+padding:100px 40px ;
+    background-image: linear-gradient(var(--bgcolorblue),var(--bgcolourlightpurple));
+    background-blend-mode:overlay;
+    background-size: cover;
+}
+.articlediv{
+    width: 50%;
+    padding: 50px;
+    h1{
+        margin-top: 100px;
+        font-size: 40px;
+        color: white;
+
+    }
+    p{
+        margin-top: 30px ;
+        color: white;
+        font-size: 25px;
+    }
+    button{
+        padding: 10px 25px;
+        font-size: 18px;
+        margin-top: 20px;
+        background-color: #7272FF;
+        border-radius: 20px;
+        color: white;
+        transition: all 0.4s linear;
+
+        &:hover{
+            letter-spacing: 1px;
+        }
+    }
+}
+.imgdiv{
+    width: 50%;
+    padding: 50px;
+    img{
+        height: 500px;
+        
+        width: 80%;
+        max-width: 350px;
+    }
+  
+
+}
+
+.course{
+    display: flex;
+}
+.leftside{
+    width: 30%;
+    padding: 80px;
+    h1{
+        margin: 40px 0px;
+        font-size: 30px;
+        color: #7272FF;
+    }
+    p{
+        line-height: 1;
+        font-size: 15px;
+        margin: 20px 0px;
+    }
+    button{
+         padding: 10px 25px;
+        font-size: 18px;
+        margin-top: 20px;
+        background-color: #7272FF;
+        border-radius: 20px;
+        color: white;
+        transition: all 0.4s linear;
+
+        &:hover{
+            letter-spacing: 1px;
+        }
+    }
+    
+    
+}
+.rightside{
+    width: 70%;
+    display: flex;
+    gap: 5px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.coursename{
+    width: 40%;
+    padding: 30px;
+    margin-left: 50px;
+    display: flex;
+    gap: 20px;
+    border: 1px solid blueviolet;
+}
+div p{
+    color: #7272FF;
+    margin-top: 3px;
+}
+div img{
+    height: 40px;
+    width: 40px;
+}
+
+.img img{
+    height: 400px;
+    width: 400px;
+}
+.secondsection{
+    display: flex;
+    padding: 100px;
+    gap: 10px;
+    background-image: url("https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/coding-background-texture.jpg");
+     background-image: linear-gradient(var(--bgcolorblue),var(--bgcolourlightpurple));
+    background-blend-mode: overlay;
+}
+.article{
+    margin-top: 100px;
+    padding: 0px 50px;
+    h1{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
+    button{
+           padding: 10px 25px;
+        font-size: 18px;
+        margin-top: 20px;
+        background-color: aqua;
+        border-radius: 20px;
+        color: white;
+        transition: all 0.4s linear;
+
+        &:hover{
+            letter-spacing: 1px;
+        }
+    }
+}
+@media screen and (max-width:860px) {
+    .navitems{
+        display: none;
+        padding: 0px;
+    }
+    .bar{
+        display: block;
+        font-size: 20px;
+        color: aqua;
+    }
+    .head h1{
+        font-size: 30px;
+    }
+    .herosec{
+        flex-direction: column;
+        text-align: center;
+        padding:0px 30px;
+    }
+    .articlediv{
+        width: 100%;
+        h1{
+            font-size: 20px;
+        }
+    }
+    .imgdiv{
+        width: 100%;
+       text-align: center;
+    }
+    .course{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .leftside{
+        width: 100%;
+    }
+    .coursename{
+        flex-direction: column;
+        width: 100%;
+    }
+    .rightside{
+        width: 100%;
+    }
+    .secondsection{
+        flex-direction: column;
+    }
+    .img{
+        text-align: center;
+    }
+    .article{
+        text-align: center;
+    }
+    .img img{
+    height: 200px;
+    width: 200px; 
+    }
+ .article{
+    padding: 0px;
+ }   
+}
